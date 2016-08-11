@@ -1,0 +1,6 @@
+{
+	"name":"My-Bookstore",
+	"description": "A Node JS App Using Express and MongoDB",
+	"keywords":["node", "express", "MongoDB"],
+	"image": "heroku/nodejs"
+}

@@ -1,0 +1,76 @@
+<html ng-app="myApp">
+<head>
+	<title>My Bookstore</title>
+
+  <meta name="description" content="My Bookstore">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+
+<style type="text/css">
+  body{
+  background-color: #3A3535;
+  padding: 0;
+  margin: 0;
+  }
+
+img {
+  max-width: 1000px;
+  width: 200px;
+  max-height: 1000px;
+  height: 200px;
+}
+</style>
+
+<body>
+
+	<nav class="navbar navbar-default fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">My Bookstore</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#/">Home</a></li>
+          <li><a href="#requirement">Gallery</a></li>
+          <li><a href="#/contact">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""><a href="#/books/add">Add a New Book</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+    <div class="row">
+    	<div class="col-sm-12">
+    		<div ng-view></div>
+    	</div>
+      <div footer-dir></div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="/lib/jquery.js"></script>
+	<script type="text/javascript" src="/lib/angular.js"></script>
+	<script type="text/javascript" src="/lib/angular-route.js"></script>
+	<script type="text/javascript" src="/lib/bootstrap.js"></script>
+	<script type="text/javascript" src="/app.js"></script>
+	<script type="text/javascript" src="/controllers/booksController.js"></script>
+	<script type="text/javascript" src="/controllers/genersController.js"></script>
+</body>
+</html>
